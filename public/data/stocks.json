@@ -1,0 +1,115 @@
+{
+  "updatedAt": "2026-10-24T09:00:00.000Z",
+  "priceDate": "2026-10-23",
+  "rates": { "bbbMinus3y": 8.5, "aaMinus3y": 4.0, "date": "2026-10-23" },
+  "stocks": [
+    {
+      "code": "000001",
+      "name": "샘플전자",
+      "market": "KOSPI",
+      "price": 58000,
+      "report": { "year": 2026, "quarter": 2, "fsDiv": "CFS" },
+      "shares": 1000000000,
+      "inputs": {
+        "operatingIncomeTTM": 4200000000000,
+        "operatingIncomeParts": [
+          { "label": "2026년 1~2분기 누적", "value": 2100000000000 },
+          { "label": "2025년 연간", "value": 4150000000000 },
+          { "label": "2025년 1~2분기 누적", "value": -2050000000000 }
+        ],
+        "currentAssets": 38000000000000,
+        "currentLiabilities": 15000000000000,
+        "investmentAssets": 12800000000000,
+        "investmentParts": [
+          { "label": "투자부동산", "value": 700000000000 },
+          { "label": "관계·종속기업 투자", "value": 4800000000000 },
+          { "label": "장기금융상품", "value": 3100000000000 },
+          { "label": "장기투자증권", "value": 4200000000000 }
+        ],
+        "nonCurrentLiabilities": 2500000000000,
+        "equityParent": 55335000000000,
+        "netIncomeParentTTM": 5533500000000,
+        "epsHistory": [
+          { "year": 2025, "eps": 5300 },
+          { "year": 2024, "eps": 5000 },
+          { "year": 2023, "eps": 4700 },
+          { "year": 2022, "eps": 4578 }
+        ]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-24T09:00:00.000Z"
+    },
+    {
+      "code": "000002",
+      "name": "샘플화학",
+      "market": "KOSPI",
+      "price": 312000,
+      "report": { "year": 2026, "quarter": 2, "fsDiv": "CFS" },
+      "shares": 70000000,
+      "inputs": {
+        "operatingIncomeTTM": 2500000000000,
+        "operatingIncomeParts": [],
+        "currentAssets": 12000000000000,
+        "currentLiabilities": 9000000000000,
+        "investmentAssets": 1500000000000,
+        "investmentParts": [{ "label": "관계·종속기업 투자", "value": 1500000000000 }],
+        "nonCurrentLiabilities": 6000000000000,
+        "equityParent": 20000000000000,
+        "netIncomeParentTTM": 1800000000000,
+        "epsHistory": [
+          { "year": 2025, "eps": 24000 },
+          { "year": 2022, "eps": 20000 }
+        ]
+      },
+      "error": "현재가 조회 실패",
+      "fetchedAt": "2026-10-21T09:00:00.000Z"
+    },
+    {
+      "code": "000003",
+      "name": "샘플은행",
+      "market": "KOSPI",
+      "price": 9850,
+      "report": { "year": 2026, "quarter": 2, "fsDiv": "CFS" },
+      "shares": 2500000000,
+      "inputs": {
+        "operatingIncomeTTM": 3000000000000,
+        "operatingIncomeParts": [],
+        "currentAssets": null,
+        "currentLiabilities": null,
+        "investmentAssets": 0,
+        "investmentParts": [],
+        "nonCurrentLiabilities": null,
+        "equityParent": 30000000000000,
+        "netIncomeParentTTM": 2500000000000,
+        "epsHistory": [
+          { "year": 2025, "eps": 1000 },
+          { "year": 2022, "eps": 900 }
+        ]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-24T09:00:00.000Z"
+    },
+    {
+      "code": "000005",
+      "name": "샘플바이오",
+      "market": "KOSDAQ",
+      "price": 24500,
+      "report": { "year": 2026, "quarter": 2, "fsDiv": "OFS" },
+      "shares": 50000000,
+      "inputs": {
+        "operatingIncomeTTM": -30000000000,
+        "operatingIncomeParts": [],
+        "currentAssets": 200000000000,
+        "currentLiabilities": 80000000000,
+        "investmentAssets": 20000000000,
+        "investmentParts": [{ "label": "장기금융상품", "value": 20000000000 }],
+        "nonCurrentLiabilities": 50000000000,
+        "equityParent": 300000000000,
+        "netIncomeParentTTM": -25000000000,
+        "epsHistory": [{ "year": 2025, "eps": -500 }]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-24T09:00:00.000Z"
+    }
+  ]
+}

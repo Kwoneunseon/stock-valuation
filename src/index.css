@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ground font-sans text-ink;
+  font-variant-numeric: tabular-nums;
+}
