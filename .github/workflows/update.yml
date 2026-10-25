@@ -1,0 +1,58 @@
+name: 수집 및 배포
+
+on:
+  schedule:
+    # 평일 18:00 KST
+    - cron: '0 9 * * 1-5'
+  push:
+    branches: [main]
+    paths: ['watchlist.json', 'src/**', 'collector/**', 'index.html', 'package.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+      - name: 데이터 수집
+        run: npm run collect
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+
+      - name: 데이터 커밋
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/data/stocks.json
+          git diff --cached --quiet || (git commit -m 'chore: 데이터 갱신' && git push)
+
+      - run: npm run build
+        env:
+          VITE_REPO: ${{ github.repository }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
