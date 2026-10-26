@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-26T13:26:09.944Z",
-  "priceDate": null,
+  "updatedAt": "2026-10-26T13:28:24.907Z",
+  "priceDate": "2026-10-23",
   "rates": {
     "bbbMinus3y": 10.29,
     "aaMinus3y": 4.476,
@@ -10,8 +10,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "market": "",
-      "price": null,
+      "market": "KOSPI",
+      "price": 215500,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -69,8 +69,8 @@
           }
         ]
       },
-      "error": "현재가 조회 실패 (시세 API HTTP 403)",
-      "fetchedAt": "2026-10-26T13:26:09.944Z"
+      "error": null,
+      "fetchedAt": "2026-10-26T13:28:24.907Z"
     }
   ]
 }
