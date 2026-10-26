@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T13:45:54.625Z",
+  "updatedAt": "2026-10-26T13:49:28.644Z",
   "priceDate": "2026-10-23",
   "rates": {
     "bbbMinus3y": 10.29,
@@ -78,7 +78,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-26T13:45:54.625Z"
+      "fetchedAt": "2026-10-26T13:49:28.644Z"
     },
     {
       "code": "402340",
@@ -151,7 +151,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-26T13:45:54.625Z"
+      "fetchedAt": "2026-10-26T13:49:28.644Z"
     },
     {
       "code": "006400",
@@ -216,7 +216,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-26T13:45:54.625Z"
+      "fetchedAt": "2026-10-26T13:49:28.644Z"
     },
     {
       "code": "005930",
@@ -281,7 +281,72 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-26T13:45:54.625Z"
+      "fetchedAt": "2026-10-26T13:49:28.644Z"
+    },
+    {
+      "code": "307950",
+      "name": "현대오토에버",
+      "market": "KOSPI",
+      "price": 324500,
+      "report": {
+        "year": 2026,
+        "quarter": 2,
+        "fsDiv": "CFS"
+      },
+      "shares": 27423982,
+      "inputs": {
+        "operatingIncomeTTM": 258944074000,
+        "operatingIncomeParts": [
+          {
+            "label": "2026년 1~2분기 누적",
+            "value": 111722456000
+          },
+          {
+            "label": "2025년 연간",
+            "value": 255302187000
+          },
+          {
+            "label": "2025년 1~2분기 누적",
+            "value": -108080569000
+          }
+        ],
+        "currentAssets": 2296896109000,
+        "currentLiabilities": 1225316167000,
+        "investmentAssets": 47021480000,
+        "investmentParts": [
+          {
+            "label": "관계·종속기업 투자",
+            "value": 39506463000
+          },
+          {
+            "label": "장기투자증권",
+            "value": 7515017000
+          }
+        ],
+        "nonCurrentLiabilities": 374398562000,
+        "equityParent": 1892116559000,
+        "netIncomeParentTTM": 190778376000,
+        "epsHistory": [
+          {
+            "year": 2025,
+            "eps": 6654
+          },
+          {
+            "year": 2024,
+            "eps": 6228
+          },
+          {
+            "year": 2023,
+            "eps": 5024
+          },
+          {
+            "year": 2022,
+            "eps": 4154
+          }
+        ]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-26T13:49:28.644Z"
     }
   ]
 }
