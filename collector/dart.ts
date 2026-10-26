@@ -21,17 +21,18 @@ export class DartClient {
     return body.list ?? []
   }
 
-  // 종목코드(6자리) → DART 고유번호(8자리)
-  async corpCodes(): Promise<Map<string, string>> {
+  // 종목코드(6자리) → DART 고유번호(8자리)와 회사명
+  async corpCodes(): Promise<Map<string, { corp: string; name: string }>> {
     const res = await fetch(`${BASE}/corpCode.xml?crtfc_key=${this.key}`)
     if (!res.ok) throw new Error(`DART corpCode HTTP ${res.status}`)
     const files = unzipSync(new Uint8Array(await res.arrayBuffer()))
     const xml = strFromU8(Object.values(files)[0])
-    const map = new Map<string, string>()
+    const map = new Map<string, { corp: string; name: string }>()
     for (const [block] of xml.matchAll(/<list>[\s\S]*?<\/list>/g)) {
       const corp = block.match(/<corp_code>(\d+)<\/corp_code>/)?.[1]
+      const name = block.match(/<corp_name>([^<]*)<\/corp_name>/)?.[1].trim()
       const stock = block.match(/<stock_code>\s*(\d{6})\s*<\/stock_code>/)?.[1]
-      if (corp && stock) map.set(stock, corp)
+      if (corp && stock) map.set(stock, { corp, name: name || stock })
     }
     return map
   }

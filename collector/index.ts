@@ -24,13 +24,14 @@ async function readPrevious(): Promise<StocksFile | null> {
 
 async function collectStock(
   dart: DartClient,
-  corps: Map<string, string>,
+  corps: Map<string, { corp: string; name: string }>,
   priceKey: string,
   code: string,
   today: Date,
 ): Promise<StockData & { priceDate: string | null }> {
-  const corp = corps.get(code)
-  if (!corp) throw new Error('종목코드를 찾을 수 없음')
+  const found0 = corps.get(code)
+  if (!found0) throw new Error('종목코드를 찾을 수 없음')
+  const { corp, name } = found0
 
   let found = null
   for (const c of reportCandidates(today)) {
@@ -45,18 +46,26 @@ async function collectStock(
   const annual1 = (await dart.reportAnyFs(corp, a0Year - 1, 4, fsDiv))?.report ?? null
 
   const shares = await dart.shareCount(corp, latest.year, latest.quarter)
-  const price = await latestPrice(priceKey, code, today)
+  // 현재가가 없어도 재무 데이터는 살린다
+  let price = null
+  let priceError = '데이터 없음'
+  try {
+    price = await latestPrice(priceKey, code, today)
+  } catch (e) {
+    priceError = (e as Error).message
+    console.error(`${code} 현재가 실패: ${priceError}`)
+  }
 
   return {
     code,
-    name: price?.name ?? code,
+    name,
     market: price?.market ?? '',
     price: price?.price ?? null,
     priceDate: price?.date ?? null,
     report: { year: latest.year, quarter: latest.quarter, fsDiv },
     shares,
     inputs: buildInputs(latest, annual0, annual1),
-    error: price ? null : '현재가 조회 실패',
+    error: price ? null : `현재가 조회 실패 (${priceError})`,
     fetchedAt: today.toISOString(),
   }
 }
