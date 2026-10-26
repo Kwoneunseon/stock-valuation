@@ -1,4 +1,4 @@
-const URL_ = 'https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo'
+const URL_ = 'https://apis.data.go.kr/1160100/GetStockSecuritiesInfoService_V2/getStockPriceInfo_V2'
 
 type Item = { basDt: string; srtnCd: string; itmsNm: string; mrktCtg: string; clpr: string }
 
