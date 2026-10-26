@@ -19,12 +19,20 @@ export function ListPage({ data }: { data: StocksFile }) {
             관심종목 {data.stocks.length}개 · {data.priceDate ?? '-'} 종가 기준 · 평일 저녁 자동 갱신
           </p>
         </div>
-        <button
-          onClick={() => setHelp(!help)}
-          className="min-h-11 rounded-[10px] border border-[#D5D6D1] bg-white px-[18px] text-sm font-semibold"
-        >
-          + 종목 추가하는 법
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => setHelp(!help)}
+            className="min-h-11 rounded-[10px] border border-[#D5D6D1] bg-white px-[18px] text-sm font-semibold"
+          >
+            + 종목 추가하는 법
+          </button>
+          <a
+            href="#/mindset"
+            className="inline-flex min-h-11 items-center rounded-[10px] bg-ink px-[18px] text-sm font-semibold text-white"
+          >
+            투자 마인드셋 ›
+          </a>
+        </div>
       </header>
 
       {help && (

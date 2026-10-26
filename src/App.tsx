@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ListPage } from './components/ListPage'
 import { DetailPage } from './components/DetailPage'
+import { MindsetPage } from './components/MindsetPage'
 import type { StocksFile } from './types'
 
 function useHash() {
@@ -34,6 +35,7 @@ export default function App() {
   if (error) return <p className="p-8 text-over">{error}</p>
   if (!data) return <p className="p-8 text-muted">불러오는 중…</p>
 
+  if (hash === '#/mindset') return <MindsetPage />
   const code = hash.match(/^#\/stock\/(\d{6})/)?.[1]
   const stock = code && data.stocks.find((s) => s.code === code)
   if (stock) return <DetailPage key={stock.code} data={data} stock={stock} />
