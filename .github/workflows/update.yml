@@ -6,7 +6,7 @@ on:
     - cron: '0 9 * * 1-5'
   push:
     branches: [main]
-    paths: ['watchlist.json', 'src/**', 'collector/**', 'index.html', 'package.json']
+    paths: ['watchlist.json', 'src/**', 'collector/**', 'index.html', 'package.json', '.github/workflows/**']
   workflow_dispatch:
 
 permissions:
@@ -45,7 +45,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/data/stocks.json
-          git diff --cached --quiet || (git commit -m 'chore: 데이터 갱신' && git pull --rebase origin main && git push)
+          # 앞선 실행이 같은 파일을 먼저 올렸으면 이번 수집 결과로 덮는다
+          git diff --cached --quiet || (git commit -m 'chore: 데이터 갱신' && git pull --rebase -X theirs origin main && git push)
 
       - run: npm run build
         env:
