@@ -45,7 +45,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/data/stocks.json
-          git diff --cached --quiet || (git commit -m 'chore: 데이터 갱신' && git push)
+          git diff --cached --quiet || (git commit -m 'chore: 데이터 갱신' && git pull --rebase origin main && git push)
 
       - run: npm run build
         env:
