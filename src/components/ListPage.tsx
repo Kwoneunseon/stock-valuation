@@ -100,6 +100,10 @@ export function ListPage({ data }: { data: StocksFile }) {
         괴리율 = (적정가 − 현재가) ÷ 현재가. + 저평가는 현재가가 적정가보다 싸다는 뜻이에요. 재무는 연결 우선(없으면
         별도), 가장 최근 정기보고서 기준이에요. 적정가는 공식으로 계산한 값이며 투자 권유가 아니에요.
       </p>
+      <p className="text-xs leading-relaxed text-muted">
+        출처: 금융위원회 주식시세정보(공공데이터포털, 저작자표시-비영리-변경금지) · 금융감독원 DART 오픈API · 한국은행
+        ECOS
+      </p>
     </div>
   )
 }
