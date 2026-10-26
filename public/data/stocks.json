@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-26T13:23:27.296Z",
-  "priceDate": "2026-10-23",
+  "updatedAt": "2026-10-26T13:26:09.944Z",
+  "priceDate": null,
   "rates": {
     "bbbMinus3y": 10.29,
     "aaMinus3y": 4.476,
@@ -69,8 +69,8 @@
           }
         ]
       },
-      "error": "현재가 조회 실패 (fetch failed)",
-      "fetchedAt": "2026-10-26T13:23:27.296Z"
+      "error": "현재가 조회 실패 (시세 API HTTP 403)",
+      "fetchedAt": "2026-10-26T13:26:09.944Z"
     }
   ]
 }
