@@ -112,7 +112,7 @@ async function main() {
 
   const out: StocksFile = {
     updatedAt: today.toISOString(),
-    priceDate: priceDates.sort().at(-1) ?? prev?.priceDate ?? null,
+    priceDate: priceDates.sort().at(-1) ?? null,
     rates,
     stocks,
   }

@@ -6,6 +6,21 @@ export type Price = { date: string; price: number; name: string; market: string 
 
 const ymd = (d: Date) => d.toISOString().slice(0, 10).replace(/-/g, '')
 
+// 해외(GitHub 러너)에서 접속이 간헐적으로 끊겨 3번까지 다시 시도한다
+async function fetchWithRetry(url: string, tries = 3): Promise<Response> {
+  let last: unknown
+  for (let i = 0; i < tries; i++) {
+    try {
+      return await fetch(url, { signal: AbortSignal.timeout(20_000) })
+    } catch (e) {
+      last = e
+      await new Promise((r) => setTimeout(r, 3000 * (i + 1)))
+    }
+  }
+  const err = last as Error & { cause?: { code?: string; message?: string } }
+  throw new Error(`시세 API 접속 실패: ${err.cause?.code ?? err.cause?.message ?? err.message}`)
+}
+
 // 이 API는 하루 늦게 갱신되므로 최근 2주에서 가장 최근 날짜를 고른다
 export async function latestPrice(key: string, code: string, today: Date): Promise<Price | null> {
   const from = new Date(today.getTime() - 14 * 86400_000)
@@ -16,7 +31,7 @@ export async function latestPrice(key: string, code: string, today: Date): Promi
     likeSrtnCd: code,
     beginBasDt: ymd(from),
   })
-  const res = await fetch(`${URL_}?${qs}`)
+  const res = await fetchWithRetry(`${URL_}?${qs}`)
   if (!res.ok) throw new Error(`시세 API HTTP ${res.status}`)
   const body = (await res.json()) as { response?: { body?: { items?: { item?: Item[] | Item } } } }
   const raw = body.response?.body?.items?.item ?? []
