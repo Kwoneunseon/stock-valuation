@@ -25,14 +25,18 @@ async function fetchWithRetry(url: string, tries = 3): Promise<Response> {
 export async function latestPrice(key: string, code: string, today: Date): Promise<Price | null> {
   const from = new Date(today.getTime() - 14 * 86400_000)
   const qs = new URLSearchParams({
-    serviceKey: key,
     resultType: 'json',
     numOfRows: '30',
     likeSrtnCd: code,
     beginBasDt: ymd(from),
   })
-  const res = await fetchWithRetry(`${URL_}?${qs}`)
-  if (!res.ok) throw new Error(`시세 API HTTP ${res.status}`)
+  // 이미 인코딩된 키(Encoding 키)를 다시 인코딩하면 '등록되지 않은 서비스키'가 된다
+  const serviceKey = key.includes('%') ? key : encodeURIComponent(key)
+  const res = await fetchWithRetry(`${URL_}?serviceKey=${serviceKey}&${qs}`)
+  if (!res.ok) {
+    const reason = (await res.text()).match(/"errMsg"\s*:\s*"([^"]+)"|<errMsg>([^<]+)/)
+    throw new Error(`시세 API HTTP ${res.status}${reason ? ` ${reason[1] ?? reason[2]}` : ''}`)
+  }
   const body = (await res.json()) as { response?: { body?: { items?: { item?: Item[] | Item } } } }
   const raw = body.response?.body?.items?.item ?? []
   const items = (Array.isArray(raw) ? raw : [raw]).filter((i) => i.srtnCd === code)
