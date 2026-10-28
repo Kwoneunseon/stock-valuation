@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-10-27T15:10:03.241Z",
-  "priceDate": "2026-10-26",
+  "updatedAt": "2026-10-28T15:46:00.937Z",
+  "priceDate": "2026-10-27",
   "rates": {
-    "bbbMinus3y": 10.27,
-    "aaMinus3y": 4.447,
-    "date": "2026-10-27"
+    "bbbMinus3y": 10.3,
+    "aaMinus3y": 4.481,
+    "date": "2026-10-28"
   },
   "stocks": [
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1275000,
+      "price": 1341000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -78,13 +78,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-27T15:10:03.241Z"
+      "fetchedAt": "2026-10-28T15:46:00.937Z"
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 769000,
+      "price": 828000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -151,13 +151,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-27T15:10:03.241Z"
+      "fetchedAt": "2026-10-28T15:46:00.937Z"
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 483500,
+      "price": 508000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -216,13 +216,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-27T15:10:03.241Z"
+      "fetchedAt": "2026-10-28T15:46:00.937Z"
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 213000,
+      "price": 222000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -281,13 +281,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-27T15:10:03.241Z"
+      "fetchedAt": "2026-10-28T15:46:00.937Z"
     },
     {
       "code": "307950",
       "name": "현대오토에버",
       "market": "KOSPI",
-      "price": 312500,
+      "price": 325500,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -346,7 +346,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-27T15:10:03.241Z"
+      "fetchedAt": "2026-10-28T15:46:00.937Z"
     }
   ]
 }
