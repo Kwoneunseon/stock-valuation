@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-10-28T15:46:00.937Z",
-  "priceDate": "2026-10-27",
+  "updatedAt": "2026-10-29T13:03:32.701Z",
+  "priceDate": "2026-10-28",
   "rates": {
-    "bbbMinus3y": 10.3,
-    "aaMinus3y": 4.481,
-    "date": "2026-10-28"
+    "bbbMinus3y": 10.275,
+    "aaMinus3y": 4.449,
+    "date": "2026-10-29"
   },
   "stocks": [
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1341000,
+      "price": 1487000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -78,13 +78,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-28T15:46:00.937Z"
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 828000,
+      "price": 921000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -151,13 +151,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-28T15:46:00.937Z"
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 508000,
+      "price": 534000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -216,13 +216,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-28T15:46:00.937Z"
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 222000,
+      "price": 242000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -281,13 +281,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-28T15:46:00.937Z"
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
     },
     {
       "code": "307950",
       "name": "현대오토에버",
       "market": "KOSPI",
-      "price": 325500,
+      "price": 350000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -346,7 +346,149 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-10-28T15:46:00.937Z"
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "market": "KOSPI",
+      "price": 61400,
+      "report": {
+        "year": 2026,
+        "quarter": 2,
+        "fsDiv": "CFS"
+      },
+      "shares": 640561146,
+      "inputs": {
+        "operatingIncomeTTM": 896905000000,
+        "operatingIncomeParts": [
+          {
+            "label": "2026년 1~2분기 누적",
+            "value": 547774000000
+          },
+          {
+            "label": "2025년 연간",
+            "value": 762712000000
+          },
+          {
+            "label": "2025년 1~2분기 누적",
+            "value": -413581000000
+          }
+        ],
+        "currentAssets": 12466920000000,
+        "currentLiabilities": 12072032000000,
+        "investmentAssets": 1109656000000,
+        "investmentParts": [
+          {
+            "label": "투자부동산",
+            "value": 211745000000
+          },
+          {
+            "label": "관계·종속기업 투자",
+            "value": 394865000000
+          },
+          {
+            "label": "장기금융상품",
+            "value": 24580000000
+          },
+          {
+            "label": "장기투자증권",
+            "value": 478466000000
+          }
+        ],
+        "nonCurrentLiabilities": 5209227000000,
+        "equityParent": 8159633000000,
+        "netIncomeParentTTM": 181072000000,
+        "epsHistory": [
+          {
+            "year": 2025,
+            "eps": 132
+          },
+          {
+            "year": 2024,
+            "eps": 174
+          },
+          {
+            "year": 2023,
+            "eps": 87
+          },
+          {
+            "year": 2022,
+            "eps": -1249
+          }
+        ]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 14270,
+      "report": {
+        "year": 2026,
+        "quarter": 2,
+        "fsDiv": "CFS"
+      },
+      "shares": 410907638,
+      "inputs": {
+        "operatingIncomeTTM": -561077169589,
+        "operatingIncomeParts": [
+          {
+            "label": "2026년 1~2분기 누적",
+            "value": 487871295676
+          },
+          {
+            "label": "2025년 연간",
+            "value": -815431279791
+          },
+          {
+            "label": "2025년 1~2분기 누적",
+            "value": -233517185474
+          }
+        ],
+        "currentAssets": 10856836884368,
+        "currentLiabilities": 5904223341401,
+        "investmentAssets": 323539769474,
+        "investmentParts": [
+          {
+            "label": "투자부동산",
+            "value": 168493445011
+          },
+          {
+            "label": "관계·종속기업 투자",
+            "value": 154769000096
+          },
+          {
+            "label": "장기금융상품",
+            "value": 277324367
+          }
+        ],
+        "nonCurrentLiabilities": 4556450997647,
+        "equityParent": 3786662530552,
+        "netIncomeParentTTM": -564420283828,
+        "epsHistory": [
+          {
+            "year": 2025,
+            "eps": -2220
+          },
+          {
+            "year": 2024,
+            "eps": 570
+          },
+          {
+            "year": 2023,
+            "eps": 1245
+          },
+          {
+            "year": 2022,
+            "eps": 1227
+          }
+        ]
+      },
+      "error": null,
+      "fetchedAt": "2026-10-29T13:03:32.701Z"
     }
   ]
 }
