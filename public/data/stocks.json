@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-11-12T17:23:40.439Z",
-  "priceDate": "2026-11-11",
+  "updatedAt": "2026-11-13T16:58:21.745Z",
+  "priceDate": "2026-11-12",
   "rates": {
-    "bbbMinus3y": 10.232,
-    "aaMinus3y": 4.407,
-    "date": "2026-11-12"
+    "bbbMinus3y": 10.258,
+    "aaMinus3y": 4.434,
+    "date": "2026-11-13"
   },
   "stocks": [
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1277000,
+      "price": 1254000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -78,13 +78,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 796000,
+      "price": 791000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -151,13 +151,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 478500,
+      "price": 473000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -216,13 +216,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 206000,
+      "price": 208000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -281,13 +281,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "307950",
       "name": "현대오토에버",
       "market": "KOSPI",
-      "price": 289000,
+      "price": 282500,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -346,59 +346,59 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 47350,
+      "price": 47200,
       "report": {
         "year": 2026,
-        "quarter": 2,
+        "quarter": 3,
         "fsDiv": "CFS"
       },
-      "shares": 640561146,
+      "shares": null,
       "inputs": {
-        "operatingIncomeTTM": 896905000000,
+        "operatingIncomeTTM": 1021057000000,
         "operatingIncomeParts": [
           {
-            "label": "2026년 1~2분기 누적",
-            "value": 547774000000
+            "label": "2026년 1~3분기 누적",
+            "value": 808985000000
           },
           {
             "label": "2025년 연간",
             "value": 762712000000
           },
           {
-            "label": "2025년 1~2분기 누적",
-            "value": -413581000000
+            "label": "2025년 1~3분기 누적",
+            "value": -550640000000
           }
         ],
-        "currentAssets": 12466920000000,
-        "currentLiabilities": 12072032000000,
-        "investmentAssets": 1109656000000,
+        "currentAssets": 11649214000000,
+        "currentLiabilities": 11680325000000,
+        "investmentAssets": 1079894000000,
         "investmentParts": [
           {
             "label": "투자부동산",
-            "value": 211745000000
+            "value": 210515000000
           },
           {
             "label": "관계·종속기업 투자",
-            "value": 394865000000
+            "value": 397915000000
           },
           {
             "label": "장기금융상품",
-            "value": 24580000000
+            "value": 22307000000
           },
           {
             "label": "장기투자증권",
-            "value": 478466000000
+            "value": 449157000000
           }
         ],
-        "nonCurrentLiabilities": 5209227000000,
-        "equityParent": 8159633000000,
-        "netIncomeParentTTM": 181072000000,
+        "nonCurrentLiabilities": 5043505000000,
+        "equityParent": 7444784000000,
+        "netIncomeParentTTM": 217454000000,
         "epsHistory": [
           {
             "year": 2025,
@@ -419,55 +419,55 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 11650,
+      "price": 11410,
       "report": {
         "year": 2026,
-        "quarter": 2,
+        "quarter": 3,
         "fsDiv": "CFS"
       },
-      "shares": 410907638,
+      "shares": null,
       "inputs": {
-        "operatingIncomeTTM": -561077169589,
+        "operatingIncomeTTM": -434465847520,
         "operatingIncomeParts": [
           {
-            "label": "2026년 1~2분기 누적",
-            "value": 487871295676
+            "label": "2026년 1~3분기 누적",
+            "value": 671052187114
           },
           {
             "label": "2025년 연간",
             "value": -815431279791
           },
           {
-            "label": "2025년 1~2분기 누적",
-            "value": -233517185474
+            "label": "2025년 1~3분기 누적",
+            "value": -290086754843
           }
         ],
-        "currentAssets": 10856836884368,
-        "currentLiabilities": 5904223341401,
-        "investmentAssets": 323539769474,
+        "currentAssets": 11370036048531,
+        "currentLiabilities": 6680031410582,
+        "investmentAssets": 247979243333,
         "investmentParts": [
           {
             "label": "투자부동산",
-            "value": 168493445011
+            "value": 167594263968
           },
           {
             "label": "관계·종속기업 투자",
-            "value": 154769000096
+            "value": 80103121395
           },
           {
             "label": "장기금융상품",
-            "value": 277324367
+            "value": 281857970
           }
         ],
-        "nonCurrentLiabilities": 4556450997647,
-        "equityParent": 3786662530552,
-        "netIncomeParentTTM": -564420283828,
+        "nonCurrentLiabilities": 4001972996284,
+        "equityParent": 3760810864282,
+        "netIncomeParentTTM": -429504133591,
         "epsHistory": [
           {
             "year": 2025,
@@ -488,13 +488,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "277810",
       "name": "레인보우로보틱스",
       "market": "KOSDAQ",
-      "price": 348000,
+      "price": 345500,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -549,13 +549,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 923000,
+      "price": 886000,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -614,13 +614,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "357580",
       "name": "아모센스",
       "market": "KOSDAQ",
-      "price": 5740,
+      "price": 5670,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -679,13 +679,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     },
     {
       "code": "005380",
       "name": "현대자동차",
       "market": "KOSPI",
-      "price": 272500,
+      "price": 266500,
       "report": {
         "year": 2026,
         "quarter": 2,
@@ -752,7 +752,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-12T17:23:40.439Z"
+      "fetchedAt": "2026-11-13T16:58:21.745Z"
     }
   ]
 }
