@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-11-24T19:58:47.799Z",
-  "priceDate": "2026-11-23",
+  "updatedAt": "2026-11-25T18:59:23.700Z",
+  "priceDate": "2026-11-24",
   "rates": {
-    "bbbMinus3y": 10.155,
-    "aaMinus3y": 4.318,
-    "date": "2026-11-24"
+    "bbbMinus3y": 10.106,
+    "aaMinus3y": 4.266,
+    "date": "2026-11-25"
   },
   "stocks": [
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1085000,
+      "price": 1158000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -74,13 +74,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 680000,
+      "price": 715000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -147,13 +147,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 396000,
+      "price": 450000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -212,13 +212,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 177500,
+      "price": 189400,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -277,13 +277,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "307950",
       "name": "현대오토에버",
       "market": "KOSPI",
-      "price": 279000,
+      "price": 362500,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -342,13 +342,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 39700,
+      "price": 42850,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -415,13 +415,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 9720,
+      "price": 10520,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -484,13 +484,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "277810",
       "name": "레인보우로보틱스",
       "market": "KOSDAQ",
-      "price": 402000,
+      "price": 472000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -545,13 +545,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 778000,
+      "price": 858000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -610,13 +610,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "357580",
       "name": "아모센스",
       "market": "KOSDAQ",
-      "price": 4465,
+      "price": 4745,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -675,13 +675,13 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     },
     {
       "code": "005380",
       "name": "현대자동차",
       "market": "KOSPI",
-      "price": 247500,
+      "price": 275000,
       "report": {
         "year": 2026,
         "quarter": 3,
@@ -748,7 +748,7 @@
         ]
       },
       "error": null,
-      "fetchedAt": "2026-11-24T19:58:47.799Z"
+      "fetchedAt": "2026-11-25T18:59:23.700Z"
     }
   ]
 }
